@@ -661,7 +661,8 @@ static inline bool audio_is_valid_format(audio_format_t format)
     case AUDIO_FORMAT_PCM:
         if (format != AUDIO_FORMAT_PCM_16_BIT &&
             format != AUDIO_FORMAT_PCM_8_BIT &&
-			format != AUDIO_FORMAT_PCM_24_BIT) {
+			format != AUDIO_FORMAT_PCM_24_BIT &&
+			format != AUDIO_FORMAT_PCM_8_24_BIT) {
             return false;
         }
     case AUDIO_FORMAT_MP3:
